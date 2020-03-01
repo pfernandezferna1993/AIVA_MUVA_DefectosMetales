@@ -1,0 +1,33 @@
+{
+    "inputpath": "./NEU-DET/IMAGES/",
+    "outputpath": "./outputfiles/",
+
+    "format": ".jpg",
+
+    "defects": {
+        "0": {
+            "name": "inclusions",
+            "folder": "in"
+        },
+        "1": {
+            "name": "scratches",
+            "folder": "sc"
+        },
+        "2": {
+            "name": "patches",
+            "folder": "pa"
+        },
+        "3": {
+            "name": "pitted_surface",
+            "folder": "ps"
+        },
+        "4": {
+            "name": "crazing",
+            "folder": "cr"
+        },
+        "5": {
+            "name": "rolled-in_scale",
+            "folder": "rs"
+        }  
+    }
+}
