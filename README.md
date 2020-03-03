@@ -11,3 +11,5 @@ Este proyecto contiene la práctica de la asignatura Aplicaciones Industriales e
 Detección de defectos o posibles manchas en piezas metálicas en una línea de producción. Con este algoritmo se identifican el tipo de defecto y su respectiva localización, a través de una imagen de la pieza a tratar.
 
 ## INSTRUCCIONES DE EJECUCIÓN:
+Dentro de la carpeta AIVA_MUVA_DefectosMetales:
+> python3 mockup.py
