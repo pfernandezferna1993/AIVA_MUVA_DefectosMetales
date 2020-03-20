@@ -25,6 +25,9 @@ if __name__ == '__main__':
     print(defectdetector)
     defectdetector.dectection()
     '''
+        Lanzar los test unitarios.
+    '''
+    '''
         tester = test()
         test_cr = tester.test_crazing()
         test_in = tester.test_inclusions()
