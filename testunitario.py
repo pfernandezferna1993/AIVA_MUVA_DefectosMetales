@@ -82,7 +82,7 @@ class TestImage (unittest.TestCase):
         # tree = ElementTree.parse('./NEU-DET/ANNOTATIONS/crazing_1.xml')
         root = tree.getroot()
         folder = root.find('folder')
-        self.assertEquals(folder.text,'pa')
+        self.assertEquals(folder.text,'ps')
         w = root.find('size').find('width')
         h = root.find('size').find('height')
         d = root.find('size').find('depth')
