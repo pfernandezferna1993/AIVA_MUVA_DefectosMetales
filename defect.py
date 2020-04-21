@@ -30,26 +30,20 @@ class Defect:
         self.fidelity = None
         self.location = []
                     
-        # Load yolov3 model
-        model = yolo.make_yolov3_model()
-        weight_reader = yolo.WeightReader('./keras_yolo3/yolov3.weights')
-        weight_reader.load_weights(model)
-        print(type(model))
-        #model.save('model.h5')
+        # TO DO: Load yolov3 model
+        # 0. Entrenar la red para adquirir los pesos personalizados (fuera de este codigo).
+        # 1. Cargar el modelo de red. model = [..]
+        # 2. Cargar al modelo los nuevos pesos.
         self.model = model
         
 
     #1. Detector def defectos:
     def defectdetector(self, image):
         print(self.model)
-        #TO-DO:
-        yhat = self.model.predict(image, batch_size=None, verbose=0)
-        print(yhat)
-        print([a.shape for a in yhat])
-        #yolotrain._main_("../config.json")
-        #1.1. Llamar al clasificador.
-        #1.2. Llamar a location.
-    #2. Clasificador: classificator_fail.
+        #TO-DO: Prediccion de una imagen. Clasificación y regresión.
+        #yhat = self.model.predict(image)
+        #print(yhat)
+
     
 
         
