@@ -8,9 +8,12 @@ Patricia Fernández Fernández
 PRÁCTICA: Detección de fallos en superficies metálicas.
 '''
 
-from metaldetectordefects import Metal_detector_defect as mdd
+#from metaldetectordefects import Metal_detector_defect as mdd
 import json
 from testunitario import TestImage as test
+import socketserver
+from server import Servidor
+from defect import Defect as defect
 
 if __name__ == '__main__': 
     '''
@@ -20,10 +23,18 @@ if __name__ == '__main__':
     with open('./constans.json', 'r') as f:
         constans = json.load(f)
 
-    # Activar el detector.
-    defectdetector = mdd(constans['inputpath'],constans['outputpath'])
-    print(defectdetector)
-    defectdetector.dectection()
+
+    #TO DO: 
+    # 1. Cargar el modelo de red. -->   detector = defect()
+    
+
+    #Poner en marcha el servidor
+    server_address = ('127.0.0.1', 8000)
+    httpd = socketserver.TCPServer(server_address, Servidor)
+    print('Starting httpd on port 8000')
+    httpd.serve_forever()
+
+
     '''
         Lanzar los test unitarios.
     '''

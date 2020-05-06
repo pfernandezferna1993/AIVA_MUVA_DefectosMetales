@@ -1,0 +1,4 @@
+opencv-python
+json
+python_http_client
+pybase64
